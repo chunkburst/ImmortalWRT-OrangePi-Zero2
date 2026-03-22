@@ -5,7 +5,7 @@
 由于香橙派官方OpenWRT镜像都没有无线驱动（完全不认）。且互联网中很少有完整的 Zero 2 的带WIFI固件，于是自己搓了一个
 
 
-
+[Release - 固件下载](https://github.com/chunkburst/ImmortalWRT-OrangePi-Zero2/releases)
 
 
 ### ✅ 适配信息
