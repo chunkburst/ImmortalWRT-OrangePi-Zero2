@@ -1,0 +1,22 @@
+diff --git a/drivers/net/wireless/uwe5622/Kconfig b/drivers/net/wireless/uwe5622/Kconfig
+index a1e123b039..992a2bd384 100644
+--- a/drivers/net/wireless/uwe5622/Kconfig
++++ b/drivers/net/wireless/uwe5622/Kconfig
+@@ -9,5 +9,4 @@ config SPARD_WLAN_SUPPORT
+ if SPARD_WLAN_SUPPORT
+ source "drivers/net/wireless/uwe5622/unisocwcn/Kconfig"
+ source "drivers/net/wireless/uwe5622/unisocwifi/Kconfig"
+-source "drivers/net/wireless/uwe5622/tty-sdio/Kconfig"
+ endif
+
+diff --git a/drivers/net/wireless/uwe5622/Makefile b/drivers/net/wireless/uwe5622/Makefile
+index 343d65ebc3..c5ed89dd79 100644
+--- a/drivers/net/wireless/uwe5622/Makefile
++++ b/drivers/net/wireless/uwe5622/Makefile
+@@ -1,6 +1,5 @@
+ obj-$(CPTCFG_AW_WIFI_DEVICE_UWE5622) += unisocwcn/
+ obj-$(CPTCFG_WLAN_UWE5622)    += unisocwifi/
+-obj-$(CPTCFG_TTY_OVERY_SDIO)  += tty-sdio/
+
+ UNISOCWCN_DIR := $(shell cd $(src)/unisocwcn/ && /bin/pwd)
+ UNISOC_BSP_INCLUDE := $(UNISOCWCN_DIR)/include

@@ -1,0 +1,15 @@
+bin/
+build_dir/
+dl/
+feeds/
+staging_dir/
+tmp/
+*.log
+.config
+.config.old
+key-build
+key-build.pub
+key-build.ucert
+key-build.ucert.revoke
+make.sh
+build.log

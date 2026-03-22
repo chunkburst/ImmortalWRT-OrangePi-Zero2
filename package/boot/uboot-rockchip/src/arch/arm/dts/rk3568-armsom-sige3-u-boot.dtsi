@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-2.0-or-later OR MIT
+/*
+ * Copyright (c) 2024 Tianling Shen <cnsztl@gmail.com>
+ */
+
+#include "rk356x-u-boot.dtsi"
+
+/ {
+	chosen {
+		stdout-path = &uart2;
+	};
+};
+
+&vcc5v0_usb_host {
+	/delete-property/ regulator-always-on;
+	/delete-property/ regulator-boot-on;
+};
+
+&vcc5v0_usb_host2 {
+	/delete-property/ regulator-always-on;
+	/delete-property/ regulator-boot-on;
+};
